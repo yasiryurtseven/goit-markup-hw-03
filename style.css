@@ -3,7 +3,42 @@ body {
   color: #2e2f42;
   font-weight: 400;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1440px;
+}
+.navigation-container {
+  width: 1440px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-container li {
+  list-style: none;
+}
 
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-direction: row;
+  gap: 156px;
+  padding-left: 156px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 115px;
+  height: 24px;
+}
 .webstudio {
   font-style: bold;
   font-family: 'raleway', sans-serif;
@@ -16,8 +51,26 @@ body {
 .webstudio .studıo {
   color: #2e2f42;
 }
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  margin-right: 332px;
+}
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 156px;
+  margin-left: 450px;
+}
+
 .navigation-list li {
   list-style: none;
+  display: flex;
 }
 .navigation-list a {
   text-decoration: none;
@@ -39,11 +92,22 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px;
 }
 .contacts a:hover {
   color: #404bbf;
 }
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .main-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #2e2f42;
   width: 1440px;
   height: 600px;
@@ -60,6 +124,7 @@ body {
   font-weight: 500;
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 48px;
   width: 169px;
   height: 56px;
   background-color: #4d5ae5;
@@ -78,7 +143,16 @@ button span {
 }
 .about {
   width: 1128px;
-  height: auto;
+  height: 104px;
+  margin: 120px 156px;
+}
+.about ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+  list-style: none;
 }
 .about h3 {
   font-size: 20px;
@@ -93,11 +167,29 @@ button span {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.our-team {
+.our-team-container {
   width: 1440px;
-  height: auto;
+  height: 732px;
   background-color: #f4f4fd;
 }
+.our-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.our-team ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.our-team li {
+  list-style: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
 .our-team h2 {
   font-weight: 700;
   font-size: 36px;
@@ -105,6 +197,7 @@ button span {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 120px;
 }
 .our-team h3 {
   font-weight: 500;
@@ -112,42 +205,89 @@ button span {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 16px;
 }
 .our-team p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 16px;
 }
-.our-portfolio {
-  width: 1128px;
+.our-portfolio-container {
+  width: 1440px;
   height: auto;
 }
+
+.our-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px;
+}
+
 .our-portfolio h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 72px;
 }
-.our-portfolio h3 {
+
+.our-portfolio ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.our-portfolio li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 360px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+.our-portfolio li h3,
+.our-portfolio li p {
+  align-self: flex-start;
+  text-align: left;
+  margin: 0;
+}
+
+.our-portfolio li h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
-.our-portfolio p {
+
+.our-portfolio li p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 0;
 }
+
 .footer {
   width: 1440px;
   height: 312px;
   background-color: #2e2f42;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 100px 1020px 100px 156px;
 }
 .footer-navigation {
   width: 264px;
