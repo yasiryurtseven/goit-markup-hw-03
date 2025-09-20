@@ -15,10 +15,11 @@ ul {
   padding: 0;
 }
 .container {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
 }
+
 .navigation-container {
-  width: 1440px;
   height: 72px;
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,7 @@ ul {
   align-items: space-between;
   flex-direction: row;
   gap: 156px;
-  padding-left: 156px;
+  padding: 24px 0 24px 156px;
   padding-top: 24px;
   padding-bottom: 24px;
   width: 115px;
@@ -57,15 +58,12 @@ ul {
   align-items: center;
   flex-direction: row;
   gap: 40px;
-  margin-right: 332px;
 }
 .contacts {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  margin-right: 156px;
-  margin-left: 450px;
 }
 
 .navigation-list li {
@@ -109,8 +107,8 @@ ul {
   align-items: center;
   flex-direction: column;
   background-color: #2e2f42;
-  width: 1440px;
   height: 600px;
+  width: 100%;
 }
 .main-hero h1 {
   font-weight: 700;
@@ -142,9 +140,7 @@ button span {
   color: #fff;
 }
 .about {
-  width: 1128px;
-  height: 104px;
-  margin: 120px 156px;
+  padding: 120px 156px;
 }
 .about ul {
   display: flex;
@@ -168,7 +164,6 @@ button span {
   color: #434455;
 }
 .our-team-container {
-  width: 1440px;
   height: 732px;
   background-color: #f4f4fd;
 }
@@ -215,7 +210,6 @@ button span {
   padding: 16px;
 }
 .our-portfolio-container {
-  width: 1440px;
   height: auto;
 }
 
@@ -223,7 +217,8 @@ button span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px;
+  padding-right: 156px;
+  padding-left: 156px;
 }
 
 .our-portfolio h2 {
@@ -280,7 +275,6 @@ button span {
 }
 
 .footer {
-  width: 1440px;
   height: 312px;
   background-color: #2e2f42;
   display: flex;
@@ -291,7 +285,6 @@ button span {
 }
 .footer-navigation {
   width: 264px;
-  height: 112px;
 }
 .footer-navigation .webtex-footer {
   color: #4d5ae5;
