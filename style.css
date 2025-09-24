@@ -16,7 +16,7 @@ ul {
 }
 .container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .navigation-container {
@@ -106,6 +106,7 @@ ul {
   padding: 188px 472px 292px 472px;
   width: 100%;
   margin: 0 auto;
+  padding: 188px 0 188px 0;
 }
 .main-hero h1 {
   font-weight: 700;
@@ -119,7 +120,7 @@ ul {
   font-weight: 500;
   border-radius: 4px;
   padding: 16px 32px;
-  margin: 48px;
+  margin-top: 48px;
   width: 169px;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -172,7 +173,7 @@ button span {
 .our-team ul {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
 }
 .our-team li {
   list-style: none;
